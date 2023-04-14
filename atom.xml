@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-14T10:25:46.440Z</updated>
+  <updated>2023-04-14T11:04:52.712Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/04/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
     <id>http://example.com/2023/04/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</id>
     <published>2023-04-14T08:58:48.000Z</published>
-    <updated>2023-04-14T10:25:46.440Z</updated>
+    <updated>2023-04-14T11:04:52.712Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="计算机网络概论"><a href="#计算机网络概论" class="headerlink" title="计算机网络概论"></a>计算机网络概论</h1><hr><h3 id="计算机网络的形成"><a href="#计算机网络的形成" class="headerlink" title="计算机网络的形成"></a>计算机网络的形成</h3><ul><li>1946 年，世界上第一台电子计算机 ENIAC 诞生，计算机与通信技术并没有直接联系。</li><li>20 世纪 50 年代初，由于美国军方的需要，美国国防部的高级研究计划署(ARPA)开始进行 ARPANET 研究</li></ul><h3 id="网络发展的四个阶段"><a href="#网络发展的四个阶段" class="headerlink" title="网络发展的四个阶段"></a>网络发展的四个阶段</h3><ul><li>第一阶段（20世纪50年代以前）：计算机与通信技术融合</li><li>第二阶段（20世纪50年代~70年代中期）：ARPnet与分组交换技术</li><li>第三阶段（20世纪90年代以后）：Internet应用技术、无线网络技术与网络安全技术研究的发展</li></ul><h3 id="计算机网络的定义和分类"><a href="#计算机网络的定义和分类" class="headerlink" title="计算机网络的定义和分类"></a>计算机网络的定义和分类</h3><p> 计算机网络是分布在不同地理位置的多台独立自治计算机系统，通过传输介质和网络设备，按照特定的结构和协议相互连接起来，利用网络操作系统进行管理和控制，实现信息传输和资源共享的系统。</p><h3 id="计算机网络的分类"><a href="#计算机网络的分类" class="headerlink" title="计算机网络的分类"></a>计算机网络的分类</h3><ul><li>按照分布的范围分类：广域网WAN、城域网MAN、局域网LAN、个人区域网PAN。</li><li>按照拓扑结构分类：总线型网、星型、环型、网状型、树型。</li><li>按照传输技术分类：广播式网路、点对点网络。</li><li>按使用者分类：公用网、专用网。</li><li>按数据交换技术分类：电路交换、报文交换、分组交换。</li></ul><h3 id="计算机网络的组成"><a href="#计算机网络的组成" class="headerlink" title="计算机网络的组成"></a>计算机网络的组成</h3><ul><li>逻辑功能上分为通信子网和资源子网两部分。<ul><li>通信子网由通信控制处理机、通信线路与其他通信设备组成。</li><li>资源子网由主机、终端、终端控制器、联网外设、软件与信息资源组成。</li></ul></li><li>物理组成上包含硬件、软件和协议三部分。<ul><li>硬件包括主机、通信处理机、通信线路、交换设备等。</li><li>软件包括网络操作系统、资源共享软件和各种应用工具等。</li><li>协议就是联网的通信双方必须遵守的规则。</li></ul></li></ul><h3 id="计算机网络的拓扑结构"><a href="#计算机网络的拓扑结构" class="headerlink" title="计算机网络的拓扑结构"></a>计算机网络的拓扑结构</h3><ul><li>网络拓扑的定义<ul><li>网络拓扑是通过网路中节点与通信线路之间的集合关系表示的网络结构，反映出网络中实体间的结构关系。</li><li>拓扑设计是实现各种网络协议的基础，对网络性能、系统可靠性费用与通信都有重大的影响。</li><li>网络拓扑主要指通信子网的拓扑。</li></ul></li></ul>]]></content>
     
