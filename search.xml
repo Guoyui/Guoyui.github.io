@@ -10,6 +10,12 @@
 <p>未来，我会不断更新这个博客，分享更多有趣的内容和故事。我相信，这个博客会成为一个让人感到温暖和舒适的地方，也希望能够为更多人带来一些启发和帮助。</p>
 <p>最后，再次和世界打个招呼，我很期待能够和你们在这个博客上交流和分享。</p>
 ]]></content>
+      <categories>
+        <category>第一篇博文</category>
+      </categories>
+      <tags>
+        <tag>hello world</tag>
+      </tags>
   </entry>
   <entry>
     <title>计算机基础</title>
@@ -203,6 +209,22 @@
 <p> 外同步(非归零码)<br> 在发送方发送一路数据信号的同时，另外发送一路同步时钟信号。</p>
 <h4 id="字节同步"><a href="#字节同步" class="headerlink" title="字节同步"></a>字节同步</h4><p> 同步式<br> 以字符组为单位，字符组前加 1 或多个 SYN 同步字符</p>
 <p> 异步式<br> 以字符为单位，每个字符的第一位前+1位起始位、最后一位+1或2位终止位。</p>
+<h3 id="数字数据的数字信号编码"><a href="#数字数据的数字信号编码" class="headerlink" title="数字数据的数字信号编码"></a>数字数据的数字信号编码</h3><p><img src="https://cdn.jsdelivr.net/gh/Guoyui/Guoyui/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E7%9A%84%E7%BC%96%E7%A0%81.png"></p>
+<p> <em>ps：差分曼彻斯特编码的特点是有跳变表示 0 无跳变表示 1，每信号周期肯定有跳变。</em></p>
+<h3 id="模拟数据的数字信号编码"><a href="#模拟数据的数字信号编码" class="headerlink" title="模拟数据的数字信号编码"></a>模拟数据的数字信号编码</h3><p> PCM脉码调制步骤：采样、量化、编码</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/Guoyui/Guoyui/pcm1.png"></p>
+<p> <img src="https://cdn.jsdelivr.net/gh/Guoyui/Guoyui/pcm2.png"></p>
+<h3 id="数据通信技术指标"><a href="#数据通信技术指标" class="headerlink" title="数据通信技术指标"></a>数据通信技术指标</h3><h4 id="比特率"><a href="#比特率" class="headerlink" title="比特率"></a>比特率</h4><p> 数据传输速率，单位 bps。1Kbps=$10^3bps$，1Mbps=$10^6$bps，1Gbps=$10^9$bps。</p>
+<p> <em>ps:下载速率Bps(1Byte=8bit)。比特率是外同步。</em></p>
+<h4 id="波特率"><a href="#波特率" class="headerlink" title="波特率"></a>波特率</h4><p> 信号传输速率，单位Baud</p>
+<p> <em>ps：曼彻斯特编码、差分曼彻斯特编码的波特率是比特率的 2 倍(编码效率 50%)。波特率是内同步。</em></p>
+<h4 id="误码率"><a href="#误码率" class="headerlink" title="误码率"></a>误码率</h4><p> 数据通信系统在正常工作的情况下，衡量传输可靠性的指标。$P_e=N_e/N$(N 是传送的总位数，$N_e$是出错的位数)</p>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>计算机</tag>
+      </tags>
   </entry>
 </search>
