@@ -394,13 +394,11 @@
 </div>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
-</script>
-
-
+    <script>
+        $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+    </script>
+    
+    
 
             <div class="cover-btns">
                 <a href="#indexCard" class="waves-effect waves-light btn">
@@ -483,7 +481,7 @@
         let autoCarousel = function () {
             carouselIntervalId = setInterval(function () {
                 coverSlider.carousel('next');
-            }, 600);
+            }, 50000);
         };
         autoCarousel();
         
