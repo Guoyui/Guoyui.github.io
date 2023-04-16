@@ -262,7 +262,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                My Blog
+                CAT
                 
             </div>
 
@@ -274,11 +274,19 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
+                                "而我仍梦到她踏着草地，在露水中飘飘荡荡的行走，让我的欢歌轻易刺透。——叶芝",
+                            
                                 "从来没有真正的绝境, 只有心灵的迷途",
                             
                                 "Never really desperate, only the lost of the soul",
                             
-                                "不怨天，不怨人，下学而上达，知我者其天乎",
+                                "不怨天，不怨人，下学而上达，知我者，其天乎",
+                            
+                                "只有目的有价值，达到目的的手段才有价值",
+                            
+                                "对不可说的保持沉默。",
+                            
+                                "仿生人会梦见电子羊吗？",
                             
                         ],
                         startDelay: 300,
@@ -296,9 +304,7 @@
 
 
     <script>
-        // 每天切换 banner 图.  Switch banner image every day.
-        var bannerUrl = "/medias/banner/" + new Date().getMinutes() + '.jpg';
-        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/0.webp)');
     </script>
     
     
@@ -609,6 +615,15 @@
 
                 
                 
+                
+                <script type="text/javascript" src="//cdn.jsdelivr.net/npm/artitalk"></script>
+<div id="artitalk_main"></div>
+<script>
+    new Artitalk({
+        appId: '',
+        appKey: '',
+    })
+</script>
                 
                 
             </div>
@@ -980,8 +995,6 @@ $(function () {
     })();
 </script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
 
