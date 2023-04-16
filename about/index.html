@@ -18,7 +18,7 @@
 
 
     <title>关于 | YuGuo</title>
-    <link rel="icon" type="image/png" href="/medias/favicon.png">
+    <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/medias/favicon.ico">
     
 
 
@@ -297,7 +297,7 @@
 
     <script>
         // 每天切换 banner 图.  Switch banner image every day.
-        var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+        var bannerUrl = "/medias/banner/" + new Date().getMinutes() + '.jpg';
         $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
     </script>
     
@@ -536,7 +536,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"第一篇博文","value":1},{"name":"学习","value":1}],
+                data: [{"name":"学习","value":1},{"name":"第一篇博文","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -560,7 +560,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["hello world","计算机"]
+                data: ["计算机","hello world"]
             }
         ],
         yAxis: [
@@ -688,7 +688,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">3.9k</span>
+                        class="white-color">5.6k</span>
             
             
             
@@ -991,11 +991,6 @@ $(function () {
 
     <!--腾讯兔小巢-->
     
-    
-    <script type="text/javascript" color="0,0,255"
-        pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
     
 
     

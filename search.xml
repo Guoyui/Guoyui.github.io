@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/04/17/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>你好，世界！</p>
-<p>这是我第一次写博客，非常兴奋也有点紧张。不过，首先我想说的是，我很高兴能够和世界打个招呼，因为这个世界是如此的美好，值得我们去探索和分享。</p>
-<p>我建立这个博客的初衷是为了记录自己的生活和思考，同时也希望能够通过这个平台和更多的人进行交流和分享。在这里，我会分享一些我喜欢的事物，比如旅行、美食、电影、音乐等等，也会分享一些我对生活的感悟和思考。</p>
-<p>这个博客是一个开放的平台，我欢迎任何人来这里留言，和我分享你们的想法和见解。同时，我也非常愿意与其他博客主进行交流和互相学习。</p>
-<p>未来，我会不断更新这个博客，分享更多有趣的内容和故事。我相信，这个博客会成为一个让人感到温暖和舒适的地方，也希望能够为更多人带来一些启发和帮助。</p>
-<p>最后，再次和世界打个招呼，我很期待能够和你们在这个博客上交流和分享。</p>
-]]></content>
-      <categories>
-        <category>第一篇博文</category>
-      </categories>
-      <tags>
-        <tag>hello world</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机基础</title>
-    <url>/2023/04/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</url>
+    <title>计算机网络基础</title>
+    <url>/2023/04/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="计算机网络概论"><a href="#计算机网络概论" class="headerlink" title="计算机网络概论"></a>计算机网络概论</h2><hr>
 <h3 id="计算机网络的形成"><a href="#计算机网络的形成" class="headerlink" title="计算机网络的形成"></a>计算机网络的形成</h3><ul>
 <li>1946 年，世界上第一台电子计算机 ENIAC 诞生，计算机与通信技术并没有直接联系。</li>
@@ -186,7 +169,10 @@
 <h4 id="信道容量"><a href="#信道容量" class="headerlink" title="信道容量"></a>信道容量</h4><p> 即信道最大传输率，决定信道容量的两个公式：</p>
 <ul>
 <li>奈奎斯特准则：不考虑信道噪声的情况下，二进制数据信号的最大传输速率$R_{max}$与信道带宽 B（Hz）的关系：$R_{max}=2*B（bps）$</li>
-<li>香农定理：在有随机热噪声的信道上传输数据信号时，传输速率$R_{max}$与信道带宽 B，信噪比 S/N 的关系：$R_{max}=B<em>log_2(1+S/N)$<br>  分贝=10</em>$log_{10^{S/N}}$</li>
+<li>香农定理：在有随机热噪声的信道上传输数据信号时，传输速率$R_{max}$与信道带宽 B，信噪比 S/N 的关系：$R_{max}=B*log_2(1+S/N)$<ul>
+<li>分贝=10*$log_{10^{S/N}}$</li>
+</ul>
+</li>
 </ul>
 <h3 id="物理层设备及冲突域、广波域"><a href="#物理层设备及冲突域、广波域" class="headerlink" title="物理层设备及冲突域、广波域"></a>物理层设备及冲突域、广波域</h3><h4 id="物理层设备"><a href="#物理层设备" class="headerlink" title="物理层设备"></a>物理层设备</h4><p> 即只能处理物理信号的设备，包括中继器、集线器HUB、放大器（模拟信道上的）。</p>
 <h4 id="冲突域"><a href="#冲突域" class="headerlink" title="冲突域"></a>冲突域</h4><p> 连接在同一条总线上的所有工作站的集合，或者说是同一物理网段上所有节点的集合，或以太网上竞争同一宽带的节点集合。冲突域基于第一层，即所有物理层设备相连的节点都在同一个冲突域中。</p>
@@ -204,27 +190,101 @@
 <h5 id="单工通信"><a href="#单工通信" class="headerlink" title="单工通信"></a>单工通信</h5><p> 单工通信只支持在一个方向上传输</p>
 <h5 id="半双工通信"><a href="#半双工通信" class="headerlink" title="半双工通信"></a>半双工通信</h5><p> 半双工允许数据同时在两个方向上传输</p>
 <h5 id="全双工通信"><a href="#全双工通信" class="headerlink" title="全双工通信"></a>全双工通信</h5><p> 支持两个方向上的独立通信。网络常用的是全双工通信。</p>
-<h3 id="数据通信中的同步"><a href="#数据通信中的同步" class="headerlink" title="数据通信中的同步"></a>数据通信中的同步</h3><p> 通信的双方在收发数据序列时必须在时间上取得一致，才能保证接收的数据与发送的数据一致</p>
-<h4 id="位同步"><a href="#位同步" class="headerlink" title="位同步"></a>位同步</h4><p> 内同步(曼彻斯特编码和差分曼彻斯特编码)<br> 从自含时钟编码的发送数据中提取同步时钟的方法,都是自含时钟编码的编码。</p>
+<h4 id="数据通信中的同步"><a href="#数据通信中的同步" class="headerlink" title="数据通信中的同步"></a>数据通信中的同步</h4><p> 通信的双方在收发数据序列时必须在时间上取得一致，才能保证接收的数据与发送的数据一致</p>
+<h5 id="位同步"><a href="#位同步" class="headerlink" title="位同步"></a>位同步</h5><p> 内同步(曼彻斯特编码和差分曼彻斯特编码)<br> 从自含时钟编码的发送数据中提取同步时钟的方法,都是自含时钟编码的编码。</p>
 <p> 外同步(非归零码)<br> 在发送方发送一路数据信号的同时，另外发送一路同步时钟信号。</p>
-<h4 id="字节同步"><a href="#字节同步" class="headerlink" title="字节同步"></a>字节同步</h4><p> 同步式<br> 以字符组为单位，字符组前加 1 或多个 SYN 同步字符</p>
+<h5 id="字节同步"><a href="#字节同步" class="headerlink" title="字节同步"></a>字节同步</h5><p> 同步式<br> 以字符组为单位，字符组前加 1 或多个 SYN 同步字符</p>
 <p> 异步式<br> 以字符为单位，每个字符的第一位前+1位起始位、最后一位+1或2位终止位。</p>
-<h3 id="数字数据的数字信号编码"><a href="#数字数据的数字信号编码" class="headerlink" title="数字数据的数字信号编码"></a>数字数据的数字信号编码</h3><p><img src="https://cdn.jsdelivr.net/gh/Guoyui/Guoyui/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E7%9A%84%E7%BC%96%E7%A0%81.png"></p>
+<h4 id="数字数据的数字信号编码"><a href="#数字数据的数字信号编码" class="headerlink" title="数字数据的数字信号编码"></a>数字数据的数字信号编码</h4><p> <img src="https://cdn.jsdelivr.net/gh/Guoyui/Guoyui/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E7%9A%84%E7%BC%96%E7%A0%81.png"></p>
 <p> <em>ps：差分曼彻斯特编码的特点是有跳变表示 0 无跳变表示 1，每信号周期肯定有跳变。</em></p>
-<h3 id="模拟数据的数字信号编码"><a href="#模拟数据的数字信号编码" class="headerlink" title="模拟数据的数字信号编码"></a>模拟数据的数字信号编码</h3><p> PCM脉码调制步骤：采样、量化、编码</p>
+<h4 id="模拟数据的数字信号编码"><a href="#模拟数据的数字信号编码" class="headerlink" title="模拟数据的数字信号编码"></a>模拟数据的数字信号编码</h4><p> PCM脉码调制步骤：采样、量化、编码</p>
 <p> <img src="https://cdn.jsdelivr.net/gh/Guoyui/Guoyui/pcm1.png"></p>
 <p> <img src="https://cdn.jsdelivr.net/gh/Guoyui/Guoyui/pcm2.png"></p>
-<h3 id="数据通信技术指标"><a href="#数据通信技术指标" class="headerlink" title="数据通信技术指标"></a>数据通信技术指标</h3><h4 id="比特率"><a href="#比特率" class="headerlink" title="比特率"></a>比特率</h4><p> 数据传输速率，单位 bps。1Kbps=$10^3bps$，1Mbps=$10^6$bps，1Gbps=$10^9$bps。</p>
+<h4 id="数据通信技术指标"><a href="#数据通信技术指标" class="headerlink" title="数据通信技术指标"></a>数据通信技术指标</h4><h5 id="比特率"><a href="#比特率" class="headerlink" title="比特率"></a>比特率</h5><p> 数据传输速率，单位 bps。1Kbps=$10^3bps$，1Mbps=$10^6$bps，1Gbps=$10^9$bps。</p>
 <p> <em>ps:下载速率Bps(1Byte=8bit)。比特率是外同步。</em></p>
-<h4 id="波特率"><a href="#波特率" class="headerlink" title="波特率"></a>波特率</h4><p> 信号传输速率，单位Baud</p>
+<h5 id="波特率"><a href="#波特率" class="headerlink" title="波特率"></a>波特率</h5><p> 信号传输速率，单位Baud</p>
 <p> <em>ps：曼彻斯特编码、差分曼彻斯特编码的波特率是比特率的 2 倍(编码效率 50%)。波特率是内同步。</em></p>
-<h4 id="误码率"><a href="#误码率" class="headerlink" title="误码率"></a>误码率</h4><p> 数据通信系统在正常工作的情况下，衡量传输可靠性的指标。$P_e=N_e/N$(N 是传送的总位数，$N_e$是出错的位数)</p>
+<h5 id="误码率"><a href="#误码率" class="headerlink" title="误码率"></a>误码率</h5><p> 数据通信系统在正常工作的情况下，衡量传输可靠性的指标。$P_e=N_e/N$(N 是传送的总位数，$N_e$是出错的位数)</p>
+<h4 id="数据调制技术"><a href="#数据调制技术" class="headerlink" title="数据调制技术"></a>数据调制技术</h4><ul>
+<li>电话信道是一种典型的模拟信道，他的覆盖最广、应用最普遍；为了利用电话信道传输计算机的数字信号，需要将数字信号转换为模拟信号</li>
+<li>模拟信道的数据编码有调制和解调两种变化：<ul>
+<li>调制（modulation）是将数字信号转变成模拟信号的过程</li>
+<li>解调（demodulation）是将模拟信号还原成数字信号的过程</li>
+</ul>
+</li>
+<li>典型设备：modm调制解调器</li>
+</ul>
+<h5 id="调幅"><a href="#调幅" class="headerlink" title="调幅"></a>调幅</h5><p> 通过改变载波信号的振幅来表示数字信号1与0.容易实现，技术简单，抗干扰能力较差。</p>
+<h5 id="调频"><a href="#调频" class="headerlink" title="调频"></a>调频</h5><p> 通过改变载波信号的频率来表示数字信号1与0.也比较容易实现，技术简单，抗干扰能力强。</p>
+<h5 id="调相"><a href="#调相" class="headerlink" title="调相"></a>调相</h5><p> 通过改变载波信号的相位值来表示数字信号1与0。</p>
+<h4 id="多路复用技术"><a href="#多路复用技术" class="headerlink" title="多路复用技术"></a>多路复用技术</h4><p> 当信道的传输能力远大于每个信源的平均传输需求时，将一条物理信道分割成多条逻辑信道，每条信道单独传输一路数据信号，且互不干扰，以达到提高物理信道利用率和吞吐量的一种技术。</p>
+<h5 id="频分多复用（FDM）"><a href="#频分多复用（FDM）" class="headerlink" title="频分多复用（FDM）"></a>频分多复用（FDM）</h5><p> 信道所能提供的宽带比传送一路信号所需的宽带宽得多时，可以使用FDM。</p>
+<h5 id="时分多复用（TDM）"><a href="#时分多复用（TDM）" class="headerlink" title="时分多复用（TDM）"></a>时分多复用（TDM）</h5><p> 信道传输速度远远大于信源信号的速度时，可以使用TDM。分为同步时分多路复用（STDM）和异步时分多路复用（ATDM），ATM是一种典型的异步时分多路复用。</p>
+<h5 id="波分多路复用（FDM）"><a href="#波分多路复用（FDM）" class="headerlink" title="波分多路复用（FDM）"></a>波分多路复用（FDM）</h5><p> 光介质上的频分多路复用</p>
+<h5 id="码分多路复用（CDMA）"><a href="#码分多路复用（CDMA）" class="headerlink" title="码分多路复用（CDMA）"></a>码分多路复用（CDMA）</h5><p> 无线介质的多路复用</p>
+<h5 id="空分多路复用"><a href="#空分多路复用" class="headerlink" title="空分多路复用"></a>空分多路复用</h5><p> 卫星通信的多路复用</p>
+<h4 id="CMDA计算"><a href="#CMDA计算" class="headerlink" title="CMDA计算"></a>CMDA计算</h4><ul>
+<li>CDMA（码分地址）采用地址吗和实践、频率共同区分信道的方式</li>
+<li>CDMA的特征是每个用户局部特定的地址码，且地址码之间相互具有正交性（即两个地址码的规格化内积为0）.因此个用户信息发射信号在频率、时间和空间上都有可能重叠，从而使有限的频率得到利用。</li>
+</ul>
+<h5 id="CDMA工作原理"><a href="#CDMA工作原理" class="headerlink" title="CDMA工作原理"></a>CDMA工作原理</h5><ul>
+<li>每个站被指定一个唯一的mbit码片序列<ul>
+<li>发送比特1，则发送自己的mbit码片序列</li>
+<li>发送比特0，则发送自己的mbit码片序列反码</li>
+</ul>
+</li>
+</ul>
+<h5 id="如何判断哪个站点发送了什么数据"><a href="#如何判断哪个站点发送了什么数据" class="headerlink" title="如何判断哪个站点发送了什么数据"></a>如何判断哪个站点发送了什么数据</h5><p> 用自己的码片序列与混合信号的码片序列进行规格化内积运算：结果为1表示发送了1；结果为-1表示发送了0；结果为0表示没有发送数据。</p>
+<h5 id="规格化内积"><a href="#规格化内积" class="headerlink" title="规格化内积"></a>规格化内积</h5><p> <strong>即对应位相乘，再相加，然后除以码片序列位数。</strong></p>
+<p> 如：站点 X 与混合信号 S（+1-3+3-1+1+1+1+1）的规格化内积：</p>
+<p>XS / 8 = ((-11)+(-1*-3)+(-13)+(1-1)+(1<em>1)+(-1</em>1)+(1+1)+(1+1))/8 = (-1+3-3-1+1-1+1+1)/8 = 0</p>
+<p>【例题】有 4 个站点进行码分多址 CDMA 通信，码片序列为： A:(-1-1-1+1+1-1+1+1) B:(-1-1+1-1+1+1+1-1) C:(-1+1-1+1+1+1-1-1) D:(-1+1-1-1-1-1+1-1) 混合信号的码片序列 S:(+1-3+3-1+1+1+1+1)，问各站点发送的数据是什么？</p>
+<p>解：用各站点的码片序列与接收到的混合信号进行规格化内积</p>
+<p>(AS)/8 = (-1+3-3-1+1-1+1+1)/8 = 0 ——–A 站点没有发送数据<br>(BS)/8 = (-1+3+3+1+1+1+1-1)/8 = 1 ——–B 站发送的信息是 1<br>(CS)/8 = (-1-3-3-1+1+1-1-1)/8 = -1 ——-C 站发送的信息为 0<br>(DS)/8 = (-1-3-3+1-1-1+1-1)/8 = -1 ——-D 站发送的信息为 0</p>
+<h3 id="数据交换技术"><a href="#数据交换技术" class="headerlink" title="数据交换技术"></a>数据交换技术</h3><h4 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h4><p> 电路交换具有线路建立、数据传输和线路拆除三个阶段</p>
+<p> 优点：通信之前建立一条被双方独占的物理通路，具有延迟小、实时性强、有序传输、适用范围广、控制简单、无冲突等优点。</p>
+<p> 缺点：建立时间长、信道利用率低、缺乏统一标准、灵活性差、不能存储与纠错。</p>
+<p> 适用场合：适用于对实时性要求高的业务，如语音、视频通信；不适合数据通信业务，如普通计算机网络通信、信道利用率太低。</p>
+<h4 id="报文交换"><a href="#报文交换" class="headerlink" title="报文交换"></a>报文交换</h4><p> 报文长度不限且携带有目标地址、源地址等信息，在交换节点采用存储转发的传输方式</p>
+<p> 优点：线路利用率高、能提高可靠性、实现多目的的报文传输。</p>
+<p> 缺点：实用性差。用于计算机网络时，延迟时间长、中间结点费用高、报文可能失序、通信不可靠。</p>
+<p> 适用场合：只用于数字信号的传输，不适合传送实时或交互式业务的数据。</p>
+<h4 id="分组交换"><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h4><p> 将一个长报文分割为若干个较短的分组，每个分组均携带源、目的地址和编号信息，也采用存储转发传输方式、分为虚电路分组交换和数据报分组交换两种。</p>
+<p> 优点：相对于报文交换，加速传输、简化了存储管理、减少了出错几率和重发数据量，从而提高了可靠性，也减少了传输时延。</p>
+<p> 缺点：相对于电路交换，分组交换存在传输时延：</p>
+<p> 数据报分组交换（类似于报文交换）可能出现失序、丢失或重复分组。</p>
+<p> 虚电路分组（类似于电路交换）存在呼叫建立、数据传输和虚电路释放3个过程，比较费时。</p>
+<h4 id="三种交换方式的选择"><a href="#三种交换方式的选择" class="headerlink" title="三种交换方式的选择"></a>三种交换方式的选择</h4><p> 若要传输的数据量很大，且其传送时间远大于呼叫时间，则采用电路交换较为合适；</p>
+<p> 当端到端的通路有很多的链路组成时，采用分组交换数据比较合适。</p>
+<p> 从提高整个网路的信道利用率上来看，报文交换和分组交换优于电路交换，其中分组交换比报文交换的时延小，尤其适合于计算机之间的突发式的数据通信。</p>
+<h4 id="宽带接入技术"><a href="#宽带接入技术" class="headerlink" title="宽带接入技术"></a>宽带接入技术</h4><ul>
+<li>铜缆接入技术：ADSL（非对称：下行带宽＞上行带宽）、HDSL（对称的高速数字用户线）</li>
+<li>光纤同轴混合技术：HFC，用户端使用Cable Modem连接CATV有限电视网</li>
+<li>光纤接入技术：FTTx-光纤到家 FTTH；光纤到大楼 FTTB；光纤到路边 FTTC；光纤到小区 FTTZ；光纤到办公室 FTTO……</li>
+</ul>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
         <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/04/17/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="你好，世界！"><a href="#你好，世界！" class="headerlink" title="你好，世界！"></a>你好，世界！</h2><hr>
+<p>这是我第一次写博客，非常兴奋也有点紧张。不过，首先我想说的是，我很高兴能够和世界打个招呼，因为这个世界是如此的美好，值得我们去探索和分享。</p>
+<p>我建立这个博客的初衷是为了记录自己的生活和思考，同时也希望能够通过这个平台和更多的人进行交流和分享。在这里，我会分享一些我喜欢的事物，比如旅行、美食、电影、音乐等等，也会分享一些我对生活的感悟和思考。</p>
+<p>这个博客是一个开放的平台，我欢迎任何人来这里留言，和我分享你们的想法和见解。同时，我也非常愿意与其他博客主进行交流和互相学习。</p>
+<p>未来，我会不断更新这个博客，分享更多有趣的内容和故事。我相信，这个博客会成为一个让人感到温暖和舒适的地方，也希望能够为更多人带来一些启发和帮助。</p>
+<p>最后，再次和世界打个招呼，我很期待能够和你们在这个博客上交流和分享。</p>
+]]></content>
+      <categories>
+        <category>第一篇博文</category>
+      </categories>
+      <tags>
+        <tag>hello world</tag>
       </tags>
   </entry>
 </search>
