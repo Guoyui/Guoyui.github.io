@@ -324,14 +324,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6.9k
+                    9.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    24 分
+                    32 分
                 </div>
                 
 
@@ -644,12 +644,92 @@
 <p> PPP协议的工作状态分为<strong>链路静止</strong>状态、<strong>链路建立</strong>状态、<strong>鉴别</strong>状态、<strong>网络层协议</strong>状态和<strong>链路打开</strong>状态。</p>
 <p> 用户使用PPP协议和ISP建立连接，并进行通信的过程如下：</p>
 <ol>
-<li>**链路静止状态下，在用户PC机和ISP的路由器之间并不存在物理层的连接；</li>
+<li><strong>链路静止状态</strong>下，在用户PC机和ISP的路由器之间并不存在物理层的连接；</li>
 <li>首先建立物理层连接，进入<strong>链路建立状态</strong>，此时物理链路建立起来；</li>
-<li>接着进行LCP配置协商，进入<strong>鉴别状态</strong>，建立起LCP链路；<br> 4.若LCP鉴别成功或无需鉴别LCP，则进入**网络层协议状态，此时已鉴别的LCP链路建立起来； </li>
-<li>链路两端的NCP根据网络层的不同协议，互相交换网络层固定的NCP分组进行NCP配置协商，进入**链路打开状态，此时建立起已鉴别的LCP和NCP链路。链路两端的PPP用户就可以彼此发送分组了。</li>
+<li>接着进行LCP配置协商，进入<strong>鉴别状态</strong>，建立起LCP链路；</li>
+<li>若LCP鉴别成功或无需鉴别LCP，则进入<strong>网络层协议状态</strong>，此时已鉴别的LCP链路建立起来； </li>
+<li>链路两端的NCP根据网络层的不同协议，互相交换网络层固定的NCP分组进行NCP配置协商，进入<strong>链路打开状态</strong>，此时建立起已鉴别的LCP和NCP链路。链路两端的PPP用户就可以彼此发送分组了。</li>
 </ol>
-<h3 id="局域网的数据链路层"><a href="#局域网的数据链路层" class="headerlink" title="局域网的数据链路层"></a>局域网的数据链路层</h3>
+<h3 id="局域网的数据链路层"><a href="#局域网的数据链路层" class="headerlink" title="局域网的数据链路层"></a>局域网的数据链路层</h3><h4 id="局域网的特点"><a href="#局域网的特点" class="headerlink" title="局域网的特点"></a>局域网的特点</h4><p> 覆盖的范围有限；数据传输率高、误码率低；为一个点位所拥有，易于建立、维护和发展。优点是具有广播功能，从一个站点可以很方便地访问全网。</p>
+<h4 id="局域网技术三要素"><a href="#局域网技术三要素" class="headerlink" title="局域网技术三要素"></a>局域网技术三要素</h4><p> <strong>网络拓扑、传输介质、介质访问控制方法</strong>（两种LAN、共享介质LAN和交换方式LAN）；</p>
+<h4 id="局域网的数据链路层的两个子层"><a href="#局域网的数据链路层的两个子层" class="headerlink" title="局域网的数据链路层的两个子层"></a>局域网的数据链路层的两个子层</h4><p> 为了使数据链路层能更好地适应多种局域网标准，802委员会将<strong>局域网的数据链路层</strong>拆分成两个子层。</p>
+<h5 id="逻辑链路控制LLC子层"><a href="#逻辑链路控制LLC子层" class="headerlink" title="逻辑链路控制LLC子层"></a>逻辑链路控制LLC子层</h5><p> 与传输媒体无关，不管采用何种协议的局域网对LLC子层来说都是透明的，以后一般不考虑LLC子层</p>
+<h5 id="媒体访问控制MAC子层"><a href="#媒体访问控制MAC子层" class="headerlink" title="媒体访问控制MAC子层"></a>媒体访问控制MAC子层</h5><p> 与接入到传输媒体有关的内容都放在MAC子层</p>
+<h4 id="IEEE802标准（MAC子层和物理层）"><a href="#IEEE802标准（MAC子层和物理层）" class="headerlink" title="IEEE802标准（MAC子层和物理层）"></a>IEEE802标准（MAC子层和物理层）</h4><p> 802.3：<strong>CSMA/CD以太网</strong>的MAC子层与物理层；- <strong>逻辑拓扑总线型，物理拓扑总线型或星型</strong></p>
+<p> 802.4:Token Bus <strong>令牌总线</strong>的MAC子层与物理层；- <strong>物理拓扑总线型、逻辑拓扑环型</strong></p>
+<p> 802.5：Token Ring <strong>令牌环网</strong>的MAC子层与物理层；- <strong>环形拓扑网络</strong></p>
+<p> 802.6：<strong>城域网</strong>的MAC子层与物理层</p>
+<p> 802.11：<strong>无线局域网</strong>WLAN的MAC子层与物理层；- <strong>802.11a、b、g、n</strong></p>
+<p> 802.16：<strong>宽带无线网络</strong>WMAN的MAC子层与物理层；</p>
+<h4 id="802-3以太网MAC帧及CSMA-x2F-CD协议"><a href="#802-3以太网MAC帧及CSMA-x2F-CD协议" class="headerlink" title="802.3以太网MAC帧及CSMA/CD协议"></a>802.3以太网MAC帧及CSMA/CD协议</h4><h5 id="以太网帧模式"><a href="#以太网帧模式" class="headerlink" title="以太网帧模式"></a>以太网帧模式</h5><p> <strong>目的地址、源地址</strong>：6字节，网卡的48位Mac地址；</p>
+<p> <strong>类型字段</strong>;2字节，标志上一层使用的是什么协议（HDLC没有）；</p>
+<p> <strong>FCS</strong>:4字节的CRC效验码；</p>
+<p> <strong>数据</strong>：最小长度64字节（18字节的首部和尾部=数据字段的最小长度16），最大长度1518字节；</p>
+<h4 id="CSMA-x2F-CD协议"><a href="#CSMA-x2F-CD协议" class="headerlink" title="CSMA/CD协议"></a>CSMA/CD协议</h4><p> 带<strong>冲突检测</strong>的<strong>载波侦听多路访问</strong>，是一种适合总线结构的采用随机访问技术的竞争型（有冲突的）介质访问控制方法。</p>
+<h5 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h5><ol>
+<li><strong>先听后发</strong>：每个站点在发送数据前，先监听信道；若介质处于空闲状态，则发送数据帧；若介质忙，则继续监听，知道介质空闲，然后立即发送。</li>
+<li><strong>边听边发、冲突停发</strong>：边发送帧边进行冲突检测，如果发生冲突，则立即停止发送；</li>
+<li><strong>延迟重发</strong>：各占监听迟等待一段时间，重新进入侦听发送阶段。</li>
+</ol>
+<h3 id="802-3以太网物理层标准"><a href="#802-3以太网物理层标准" class="headerlink" title="802.3以太网物理层标准"></a>802.3以太网物理层标准</h3><h4 id="标准以太网（10Mbps-Ethernet）802-3物理层标注"><a href="#标准以太网（10Mbps-Ethernet）802-3物理层标注" class="headerlink" title="标准以太网（10Mbps,Ethernet）802.3物理层标注"></a>标准以太网（10Mbps,Ethernet）802.3物理层标注</h4><p> 10BAE5:使用粗同轴电缆，长度不超过500米；</p>
+<p> 10BASE2：使用细同轴电缆，长度不超过185米；</p>
+<p> 10BASE-T：使用双绞线UTP，长度不超过100米；</p>
+<h4 id="快速以太网（100Mbps，FE）802-3u物理层标准"><a href="#快速以太网（100Mbps，FE）802-3u物理层标准" class="headerlink" title="快速以太网（100Mbps，FE）802.3u物理层标准"></a>快速以太网（100Mbps，FE）802.3u物理层标准</h4><p> 100BASE-TX：使用2对UTPS类线或屏蔽双绞线STP；</p>
+<p> 100BASE-FX：使用2对光纤；</p>
+<p> 100BASE-T4：使用4对UTP-3类或5类线；</p>
+<h4 id="吉比特以太网（1GpsmGE）802-3z"><a href="#吉比特以太网（1GpsmGE）802-3z" class="headerlink" title="吉比特以太网（1GpsmGE）802.3z"></a>吉比特以太网（1GpsmGE）802.3z</h4><p> 10000BASE-SX：短波长光纤通道</p>
+<p> 1000BASE-LX：长波长光线通道</p>
+<p> 1000BASE-CX：表示铜线</p>
+<p> 1000BASE-T：使用4对5类线UTP</p>
+<h4 id="十吉比特以太网（10Gbps，10GE）802-3ae"><a href="#十吉比特以太网（10Gbps，10GE）802-3ae" class="headerlink" title="十吉比特以太网（10Gbps，10GE）802.3ae"></a>十吉比特以太网（10Gbps，10GE）802.3ae</h4><p> 10吉比特以太网只<strong>工作在全双工方式</strong>，因此没有竞用问题，也<strong>不使用CSMA/CD协议</strong></p>
+<p> 10GBASE-SR：300m，多模光纤（$0.85\mu$ m）</p>
+<p> 10GBASE-LR：10m，多模光纤（$1.3\mu$ m）</p>
+<p> 10GBASE-ER：40m，多模光纤（$1.5\mu$ m ）</p>
+<h3 id="数据链路层设备及其特性：网卡、网桥、交换机"><a href="#数据链路层设备及其特性：网卡、网桥、交换机" class="headerlink" title="数据链路层设备及其特性：网卡、网桥、交换机"></a>数据链路层设备及其特性：网卡、网桥、交换机</h3><h4 id="网卡"><a href="#网卡" class="headerlink" title="网卡"></a>网卡</h4><p> 即<strong>网络适配器</strong>，工作在<strong>物理层和数据链层</strong>。能够实现网络数据传输的串行和并行转换；能够对数据进行缓存，实现以太网协议：同时能够实现帧的封装、传送和接受等。</p>
+<h4 id="网桥"><a href="#网桥" class="headerlink" title="网桥"></a>网桥</h4><p> 网桥自定了每个端口所处网段的机器地址（MAC地址），形成一个地址映射表，该表主要由端口号和站点MAC地址组成。网桥每次转发帧时，先查地址映射表，如查到，则向相应端口转发；如查不到，则向出接收端口外的所有端口转发</p>
+<h4 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h4><p> 交换机也称为多多端口网桥，两者的不同之处主要包括以下三点：</p>
+<ol>
+<li>网桥的端口一般连接局域网，而交换机的端口一般直接与局域网的主机相连；</li>
+<li>交换机允许多对计算机同时通信，而网桥仅允许每个网段上的计算机同时通信；</li>
+<li>网桥采用存储转发方式进行转发，交换机还可以采用直通方式进行抓发，转发速度比网桥块；</li>
+</ol>
+<h3 id="交换机的三种交换方式"><a href="#交换机的三种交换方式" class="headerlink" title="交换机的三种交换方式"></a>交换机的三种交换方式</h3><h4 id="直通交换"><a href="#直通交换" class="headerlink" title="直通交换"></a>直通交换</h4><p> 交换机在输入端口检测一个帧时，检查帧头获取目的地址，查找Mac地址表转换成相应的输出端口，把数据帧直通到相应的端口，实现交换功能。由于不需要储存，延迟非常小、交换非常块；缺点是因为数据帧没有完整接受并保存，所以无法检查所传送的帧是否有错误，不能提供错误检测能力、由于没有缓存，不能将具有不同速率的输入/输出端口直接接通，容易丢包。</p>
+<h4 id="储存转发交换"><a href="#储存转发交换" class="headerlink" title="储存转发交换"></a>储存转发交换</h4><p> 是计算机网络领域应用最为广泛的方式。它将输入输出端口的数据帧完整接受并储存起来，进行CRC校验后才去除目的地址、查找MAC地址表，转换成输出端口再转发帧。储存转发方式的缺点是数据处理延时大，优点是对帧进行错误检测，可以有效地改善网络性能，且支持不同速度的端口间的转换，保持高速端口与低俗端口间的协同工作。</p>
+<h4 id="改进的直通交换-碎片交换"><a href="#改进的直通交换-碎片交换" class="headerlink" title="改进的直通交换(碎片交换)"></a>改进的直通交换(碎片交换)</h4><p> 介于两者之间的一种解决方案。它检测数据帧的长度是否能够64个字节，加入小于64字节，说明是假包，则丢弃；</p>
+<p> 假如大于64字节则转发。这种方式也不提供数据校验，他的数据处理速度比储存转发效率高比直通交换效率低。</p>
+<h3 id="交换式局域网与虚拟局域网技术"><a href="#交换式局域网与虚拟局域网技术" class="headerlink" title="交换式局域网与虚拟局域网技术"></a>交换式局域网与虚拟局域网技术</h3><h4 id="交换式局域网"><a href="#交换式局域网" class="headerlink" title="交换式局域网"></a>交换式局域网</h4><p> 交换式局域网的<strong>核心设备是交换机</strong>。交换机的多个端口之间可以建立<strong>多个并发连接</strong>，允许不同用户间同时进行通信，每个节点独享端口带宽。</p>
+<h4 id="虚拟局域网VLAN"><a href="#虚拟局域网VLAN" class="headerlink" title="虚拟局域网VLAN"></a>虚拟局域网VLAN</h4><p> 是由一些局域网段构成的与物理位置无关的逻辑组。这些网段具有某些共同的需求，每个VLAN的帧都有一个四字节的VLAN标记（tag），指发明这个帧的工作站是属于哪一个VLAN；虚拟局域网其实是局域网给用户提供的一种服务，而不是一种新的局域网。</p>
+<h5 id="VLAN的划分方法"><a href="#VLAN的划分方法" class="headerlink" title="VLAN的划分方法"></a>VLAN的划分方法</h5><ol>
+<li>基于交换机的端口号划分 VLAN</li>
+<li>基于MAC地址划分 VLAN</li>
+<li>基于网络层地址划分 VLAN</li>
+<li>基于IP组划分 VLAN</li>
+</ol>
+<h3 id="无线局域网WLAN及802-11标准"><a href="#无线局域网WLAN及802-11标准" class="headerlink" title="无线局域网WLAN及802.11标准"></a>无线局域网WLAN及802.11标准</h3><h4 id="三种拓扑结构"><a href="#三种拓扑结构" class="headerlink" title="三种拓扑结构"></a>三种拓扑结构</h4><ol>
+<li>独立的基本服务集（Independent BSS，IBSS）网络（也叫ad-hoc网络）</li>
+<li>基本服务器集（Basic Service Set，BSS）网络，就是平时说的无线WIFI，指通过接入点AP来接入网络；</li>
+<li>扩展服务集（Extent Service Set，ESS）网络，多个AP构成更大范围的无线网络</li>
+</ol>
+<h4 id="802-11标准的特点"><a href="#802-11标准的特点" class="headerlink" title="802.11标准的特点"></a>802.11标准的特点</h4><ol>
+<li>传输速率：提升到300Mbps 甚至高达600Mbps；</li>
+<li>覆盖范围：采用智能天线技术，其覆盖范围可扩大到几平方公里；</li>
+<li>兼容性：支持2.4GHz和5GHz 双频信号；</li>
+</ol>
+<h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h2><h3 id="IP协议"><a href="#IP协议" class="headerlink" title="IP协议"></a>IP协议</h3><p> IP协议是TCP/IP模型中最重要的两个协议之一，提供一种不可靠、无连接、尽力而为的数据包传送服务；IP数据报的交付分为直接交付和间接交付：</p>
+<ul>
+<li>直接交付不需要使用路由器</li>
+<li>间接交付必须使用路由器</li>
+</ul>
+<p> IP数据报格式：首部（报头区，又分固定不分和可变部分）+数据</p>
+<p> <img src="https://tucdn.wpon.cn/2023/04/18/c6d934bc821f3.png" alt="IP数据报.png"></p>
+<ol>
+<li><strong>首部长度</strong>：以32bit为单位，支出该包头的长度。值范围0101（5）-1111（15），即20-60Byte</li>
+<li><strong>总长度</strong>：以8bit为单位，支出IP数据报的长度，包括报头区和数据区的长度。</li>
+<li><strong>生存周期TTL</strong>：数据报在网络中可通过路由器数的最大值，每经过一个路由器，TTL值-1，该域为0时，分组将被删除。可防止环路时数据分组无限传递，控制IP分组的数据传输时延。</li>
+<li><strong>协议</strong>：协议字段支出应将数据部分交给哪个进程。</li>
+<li><strong>首部校验和</strong>：用于保证IP数据报报头的完整性。</li>
+</ol>
+
                 
             </div>
             <hr/>
@@ -1086,7 +1166,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">7.2k</span>
+                        class="white-color">9.4k</span>
             
             
             
